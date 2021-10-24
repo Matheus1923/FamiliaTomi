@@ -16,7 +16,8 @@ namespace Family.Models
 
         public Int32 IdFamilia { get; set; }
 
-        
+        [Required]
+        [StringLength(50, MinimumLength = 10, ErrorMessage = " O campo deve conter entre 10 á 50 caracteres")]
         [Column("nome")]
 
         public string Nome { get; set; }
